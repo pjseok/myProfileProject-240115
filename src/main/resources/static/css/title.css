@@ -36,3 +36,9 @@ td.skillbox{
 	background-color: CEAB93;
 }
 
+img{
+	width: 1200px;
+  	height: 700px;
+  	object-fit: cover;
+	
+}
