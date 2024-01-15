@@ -1,3 +1,4 @@
+<%@page import="com.fasterxml.jackson.annotation.JsonInclude.Include"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -9,14 +10,16 @@
 <title>My profile</title>
 </head>
 <body>
+	<%@  include file="include/header.jsp" %>
+	<center>
 	<table border="0" cellpadding="20" cellspacing="0">
 		<tr>
-			<td>
+			<td align = "center"> 
 				<span class="title01">DEVELOPER PJSEOK PROFILE</span>
 			</td>
 		</tr>
 		<tr>
-			<td>
+			<td align = "center">
 				<span class="title02">I'm jinseok park, a developer who wants a development job. Please call me back.</span>
 			</td>
 		</tr>
@@ -61,5 +64,7 @@
 			</td>
 		</tr>
 	</table>
+	</center>
+	<%@  include file="include/footer.jsp" %>
 </body>
 </html>
