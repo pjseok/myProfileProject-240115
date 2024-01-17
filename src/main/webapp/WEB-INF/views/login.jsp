@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="/resources/css/title.css">
 <link rel="stylesheet" href="/resources/css/content.css">
-<script type="text/javascript" src="/resources/js/join.js"></script>
+<script type="text/javascript" src="/resources/js/login.js"></script>
 <style type="text/css"></style>
 <title>join</title>
 </head>
@@ -28,7 +28,7 @@
 		<tr>
 			<td class="con_box" align="center">
 				<table border="0" cellpadding="10" cellspacing="0">
-				<form action="joinOk" method="post" name="joinForm">
+				<form action="loginOk" method="post" name="loginForm">
 					<tr>
 					 	<td class="con_text">아 이 디 :</td>
 					 	<td><input class="input_box01" type="text" name = "mid"></td>
@@ -37,25 +37,14 @@
 					 	<td class="con_text">비밀번호 :</td>
 					 	<td><input class="input_box01" type="password" name = "mpw"></td>
 					</tr>
-					<tr>
-					 	<td class="con_text">비밀번호확인 :</td>
-					 	<td><input class="input_box01" type="password" name = "mpw_check"></td>
-					</tr>
-					<tr>
-					 	<td class="con_text">이 름 :</td>
-					 	<td><input class="input_box01" type="text" name = "mname"></td>
-					</tr>
-					<tr>
-					 	<td class="con_text">이 메 일 :</td>
-					 	<td><input class="input_box01" type="text" name = "memail"></td>
-					</tr>
+					
 					<tr>
 						<td colspan="2">&nbsp;</td>
 					</tr>
 					<tr>
 					 	<td colspan="2" align="center">
-					 		<input class="con_btn01" type = "button" value="가입완료" onclick="joinCheck()">&nbsp;&nbsp;
-					 		<input class="con_btn01" type = "button" value="로그인" onclick="javascript:window.location.href='login'">
+					 		<input class="con_btn01" type = "button" value="로그인" onclick="loginCheck()">&nbsp;&nbsp;
+					 		<input class="con_btn01" type = "button" value="회원가입" onclick="javascript:window.location.href='join'">
 					 	</td>
 					</tr>
 				</form>

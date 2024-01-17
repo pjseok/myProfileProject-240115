@@ -22,16 +22,16 @@
 		</tr>
 		<tr>
 			<td align = "center">
-				<span class="title02">I'm jinseok park, a developer who wants a development job. Please call me back.</span>
+				<span class="title02">I'm Jinseok Park, a developer who wants a development job. Please call me back.</span>
 			</td>
 		</tr>
 		<tr>
 			<td class="con_box" align="center">
 				<table border="0" cellpadding="10" cellspacing="0">
-				<form action="joinOk" method="post" name="joinForm">
+				<form action="modifyOk" method="post" name="joinForm">
 					<tr>
 					 	<td class="con_text">아 이 디 :</td>
-					 	<td><input class="input_box01" type="text" name = "mid"></td>
+					 	<td><input class="input_box01" type="text" name = "mid" value = "${memberDto.mid}" readonly="readonly"></td>
 					</tr>
 					<tr>
 					 	<td class="con_text">비밀번호 :</td>
@@ -43,19 +43,19 @@
 					</tr>
 					<tr>
 					 	<td class="con_text">이 름 :</td>
-					 	<td><input class="input_box01" type="text" name = "mname"></td>
+					 	<td><input class="input_box01" type="text" name = "mname" value = "${memberDto.mname}"></td>
 					</tr>
 					<tr>
 					 	<td class="con_text">이 메 일 :</td>
-					 	<td><input class="input_box01" type="text" name = "memail"></td>
+					 	<td><input class="input_box01" type="text" name = "memail" value = "${memberDto.memail}"></td>
 					</tr>
 					<tr>
 						<td colspan="2">&nbsp;</td>
 					</tr>
 					<tr>
 					 	<td colspan="2" align="center">
-					 		<input class="con_btn01" type = "button" value="가입완료" onclick="joinCheck()">&nbsp;&nbsp;
-					 		<input class="con_btn01" type = "button" value="로그인" onclick="javascript:window.location.href='login'">
+					 		<input class="con_btn01" type = "button" value="수정완료" onclick="joinCheck()">&nbsp;&nbsp;
+					 		<input class="con_btn01" type = "button" value="수정취소" onclick="javascript:window.location.href='index'">
 					 	</td>
 					</tr>
 				</form>
