@@ -25,4 +25,10 @@ public class MemberController {
 		
 		return "index";
 	}
+	
+	@RequestMapping(value = "/join")
+	public String join() {
+		
+		return "join";
+	}
 }
