@@ -15,7 +15,7 @@
 		<tr class ="footerline">
 			<td align="center">
 				<span class="footertext">
-					Copyright ⓒ PjseokCompany. All rights reserved
+					Copyright ⓒ Pjseok Company. All rights reserved
 				</span>
 			</td>
 		</tr>

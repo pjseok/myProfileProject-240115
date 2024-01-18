@@ -39,7 +39,7 @@
 				<a href = "#"><span class="menutext">profile</span></a>
 			</td>
 			<td width = "3%" align ="center">
-				<a href = "#"><span class="menutext">board</span></a>
+				<a href = "board"><span class="menutext">board</span></a>
 			</td>
 			<td width = "3%" align ="center">
 				<a href = "#"><span class="menutext">contact</span></a>
@@ -50,6 +50,13 @@
 		</tr>
 		<tr height="20">
 			<td>&nbsp;</td>
+				<c:if test="${sessionScope.sessionId != null}">
+					<td colspan="9" align = "right">
+						<span style="font-family: Arial;font-size: 14px;color: #0B60B0;font-weight: bold;">
+							<c:out value="${sessionScope.sessionId}"></c:out></span> LOG IN
+						
+					</td>
+				</c:if>
 		</tr>
 	</table>
 </body>
