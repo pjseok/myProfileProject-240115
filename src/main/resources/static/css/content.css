@@ -37,7 +37,7 @@ input.input_box01{
 input.con_btn01 {
 	border:2px solid #FFFFFF;
 	background-color:#3F4E4F;
-	width: 180px;
+	width: 140px;
 	height: 40px;
 	font-family: malgun;
 	color: #FFFFFF;
@@ -47,7 +47,7 @@ input.con_btn01 {
 input.con_btn01:hover {
 	border:2px solid #FFFFFF;
 	background-color:#400040;
-	width: 180px;
+	width: 140px;
 	height: 40px;
 	font-family: malgun;
 	color: #FFFFFF;
