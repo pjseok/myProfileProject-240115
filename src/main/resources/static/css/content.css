@@ -24,6 +24,8 @@ td.con_text02 {
 	text-align:center;
 }
 
+
+
 input.input_box01{
 	border: 1px solid #A27B5C;
 	background-color:#FFFFFF;
@@ -66,3 +68,20 @@ textarea.btextarea{
 	padding: 5px;	
 }
 
+
+a.pageNumber:link{
+	font-family:Arial;
+	font-size:18px;
+	color:#A27B5C;
+}
+a.pageNumber:hover{
+	font-family:Arial;
+	font-size:18px;
+	color:#DCD7C9;
+}
+
+a.pageNumber:visited{
+	font-family:Arial;
+	font-size:18px;
+	color:#DCD7C9;
+}

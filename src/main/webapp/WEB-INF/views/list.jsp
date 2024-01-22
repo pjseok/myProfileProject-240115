@@ -38,7 +38,7 @@
 									<th class="btitle">번호</th>
 									<th class="btitle">아이디</th>
 									<th class="btitle">이름</th>
-									<th class="btitle">글제목</th>
+									<th class="btitle" witdth=50%>글제목</th>
 									<th class="btitle">등록일</th>
 								</tr>
 								<c:forEach items="${list}" var="boardDto">
@@ -47,7 +47,17 @@
 									<td class = "bcontent" align="center">${boardDto.qbmid}</td>
 									<td class = "bcontent" align="center">${boardDto.qbname}</td>
 									<td class = "bcontent">
-										<a href="contentView?qbnum=${boardDto.qbnum}">${boardDto.qbtitle}</a>
+										
+										<a href="contentView?qbnum=${boardDto.qbnum}">
+										<c:choose>
+											<c:when test="${fn:length(boardDto.qbtitle) > 25}">
+												<c:out value="${fn:substring (boardDto.qbtitle,0,24)}"></c:out>...
+											</c:when>
+											<c:otherwise>
+												${boardDto.qbtitle}
+											</c:otherwise>
+										</c:choose>
+										</a>
 									</td>
 									<td class = "bcontent" align="center">
 										<c:out value="${fn:substring(boardDto.qbdate,0,10)}"/>
@@ -57,6 +67,30 @@
 								<tr>
 									<td colspan="5" align ="right">
 										<input class="con_btn01" type="button" value="글쓰기" onclick="javascript:window.location.href='writeForm'">
+									</td>
+								</tr>
+								<!-- 페이지 표시 출력 -->
+								<tr>
+									<td colspan="5" align="center">
+										<c:if test="${pageDto.prev }">
+											 <a href="board?pageNum=${pageDto.startPage-10}">◀ prev</a>&nbsp;&nbsp;
+										</c:if>
+										
+										<c:forEach begin="${pageDto.startPage }" end="${pageDto.endPage }" var="pageNumber">
+											<c:choose>
+												<c:when test="${currPage == pageNumber}">
+													<span style="background-color: #7FC7D9;color: white;">${pageNumber}</span>&nbsp;&nbsp;
+												</c:when>
+												<c:otherwise>												
+													<a class="pageNumber" href="board?pageNum=${pageNumber}">${pageNumber}</a>&nbsp;&nbsp;
+												</c:otherwise>
+											</c:choose>
+										</c:forEach>
+										
+										<c:if test="${pageDto.next }">
+											 <a href="board?pageNum=${pageDto.startPage+10}">next ▶</a>
+										</c:if>
+										
 									</td>
 								</tr>
 							</table>

@@ -9,9 +9,9 @@ public class QAboardDto {
 	
 	private String qbemail; // 글쓴이 이메일
 	private String qbdate; // 글 등록일
-public QAboardDto() {
+	public QAboardDto() {
 		super();
-		// TODO Auto-generated constructor stub
+		
 	}
 
 public QAboardDto(int qbnum, String qbtitle, String qbcontent, String qbmid, String qbname, String qbemail,
